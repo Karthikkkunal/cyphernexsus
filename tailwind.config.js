@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#0A2342',
+          50: '#E6F6FF',
+          100: '#CCE6F9',
+          200: '#99C8F0',
+          300: '#66A9E6',
+          400: '#338BDC',
+          500: '#0A2342',
+          600: '#081D36',
+          700: '#06172B',
+          800: '#04101F',
+          900: '#020A14',
+        },
+        secondary: {
+          DEFAULT: '#2A9D8F',
+          50: '#E6F9F7',
+          100: '#CCF3EF',
+          200: '#99E6DF',
+          300: '#66DACF',
+          400: '#33CDBF',
+          500: '#2A9D8F',
+          600: '#227E72',
+          700: '#1A5E55',
+          800: '#113F39',
+          900: '#091F1C',
+        },
+        accent: {
+          DEFAULT: '#E9C46A',
+          50: '#FEF9EF',
+          100: '#FDF3DE',
+          200: '#FAE7BD',
+          300: '#F8DB9C',
+          400: '#F5CF7B',
+          500: '#E9C46A',
+          600: '#E3B33F',
+          700: '#CF9820',
+          800: '#9F7518',
+          900: '#6F5111',
+        },
+        danger: {
+          DEFAULT: '#E76F51',
+          50: '#FDEEEB',
+          100: '#FCDDD7',
+          200: '#F9BBB0',
+          300: '#F59888',
+          400: '#F27661',
+          500: '#E76F51',
+          600: '#E04B26',
+          700: '#B53A1B',
+          800: '#872C14',
+          900: '#5A1D0E',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'spin-slow': 'spin 8s linear infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        glow: {
+          '0%': { boxShadow: '0 0 5px rgba(42, 157, 143, 0.5)' },
+          '100%': { boxShadow: '0 0 20px rgba(42, 157, 143, 0.8)' },
+        },
+      },
+      boxShadow: {
+        'glow-sm': '0 0 10px rgba(42, 157, 143, 0.3)',
+        'glow-md': '0 0 15px rgba(42, 157, 143, 0.5)',
+        'glow-lg': '0 0 25px rgba(42, 157, 143, 0.7)',
+      },
+    },
+  },
+  plugins: [],
+};
