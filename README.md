@@ -1,8 +1,3 @@
-# cyphernexsus
-
-Certainly! Based on the information available from the GitHub repository and the deployed website, here's a comprehensive `README.md` file for your project:
-
----
 
 # CypherNexsus
 
